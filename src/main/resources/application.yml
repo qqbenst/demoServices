@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: calculation-service
+  cloud:
+    config:
+     uri: http://172.17.0.2:8080
+      

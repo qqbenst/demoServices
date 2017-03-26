@@ -1,0 +1,18 @@
+package com.example.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CalculationController {
+	
+	@ResponseBody
+    @RequestMapping(value = "/divide" ,method = RequestMethod.GET)
+	public double divide(@RequestParam Double num1,@RequestParam Double num2){
+		
+		return num1/num2;
+	}
+}
